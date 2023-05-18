@@ -24,16 +24,20 @@ const Wrapper = styled(AppBar)`
 }
 
 .menuItem1{
-/* width: 8%; */
+/* min-width: 5px; */
+padding: 0;
 min-width:10%; 
-margin-right: 10;
-background-color:aliceblue;
+margin-right: 3%;
+/* background-color:aliceblue; */
 }
 
 .menuItem2{
 /* width: 80%; */
-min-width:80%;
-background-color:red;
+/* margin-right: 2%; */
+/* background-color:red; */
+}
+.menuItem3{
+    margin-left: auto;
 }
  
 `;
