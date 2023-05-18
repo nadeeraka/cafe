@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 // import { Menu as MenuIcon } from "@mui/icons-material/Menu";
 import styled from 'styled-components';
+import {getDataFromApi} from '../../core/api/query'
 
 
 const Wrapper = styled(AppBar)`
@@ -28,9 +29,16 @@ const Wrapper = styled(AppBar)`
 padding: 0;
 min-width:10%; 
 margin-right: 3%;
+
 /* background-color:aliceblue; */
 }
+.menuItem4{
+/* min-width: 5px; */
+ 
+margin-left: 3%;
 
+/* background-color:aliceblue; */
+}
 .menuItem2{
 /* width: 80%; */
 /* margin-right: 2%; */
@@ -43,6 +51,8 @@ margin-right: 3%;
 `;
 
 export default function ButtonAppBar() {
+
+    // console.log(getDataFromApi())
     return (
         <Wrapper>
             <Box sx={{ flexGrow: 1 }}>
@@ -61,7 +71,10 @@ export default function ButtonAppBar() {
                             NexMovie
                         </Typography>
                         <Typography variant="h6" component="div"  className='menuItem2'>
-                            NexMovie
+                            Upcomming
+                        </Typography>
+                        <Typography variant="h6" component="div"  className='menuItem4'>
+                            Upcomming
                         </Typography>
                         <Button  className='menuItem3' color="inherit">Login</Button>
                     </Toolbar>
