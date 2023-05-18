@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 // import { Menu as MenuIcon } from "@mui/icons-material/Menu";
 import styled from 'styled-components';
 import {getDataFromApi} from '../../core/api/query'
+import {clorChangeAPI} from '../../core/util/main'
 
 
 const Wrapper = styled(AppBar)`
@@ -54,7 +55,7 @@ export default function ButtonAppBar() {
 
     // Todo The purpose of useCallback() and useMemo()
 
-    
+    console.log(clorChangeAPI(true))
 
     // console.log(getDataFromApi())
     return (
