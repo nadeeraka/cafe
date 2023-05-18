@@ -1,4 +1,4 @@
-import * as React from 'react';
+import  React,{ useCallback } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -51,6 +51,10 @@ margin-left: 3%;
 `;
 
 export default function ButtonAppBar() {
+
+    // Todo The purpose of useCallback() and useMemo()
+
+    
 
     // console.log(getDataFromApi())
     return (
