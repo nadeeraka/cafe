@@ -1,14 +1,37 @@
-export const itemReduser = (state: any = [], action: any) => {
+import { itemReduserType } from "../../types/types";
+import { v4 as uuidv4 } from "uuid";
+
+// v4()
+
+const initialState: itemReduserType = {
+  items: [
+    {
+      id: "",
+      unitPrice: 0,
+      quantity: 0,
+      discription: "",
+    },
+  ],
+};
+
+export const itemReduser = (
+  state: itemReduserType = initialState,
+  action: any
+) => {
   let lastCount: number = 0;
 
   switch (action.type) {
     case "addItem":
       return {
         ...state,
-        discription: action.payloard.discription,
-        price: action.payloard.price,
-        quantity:action.payloard.quantity,
-        count: ++lastCount,
+        items: [
+          {
+            id: uuidv4(),
+            discription: action.payloard.discription,
+            unitPrice: action.payloard.unitPrice,
+            quantity: action.payloard.quantity,
+          },
+        ],
       };
     case "removeItem":
       return {

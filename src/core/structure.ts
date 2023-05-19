@@ -1,22 +1,15 @@
-
 {
-    categories: []
-    items: []
-    cart: { }
-    theme: { }
-    users: []
-
-
-
+  categories: [];
+  items: [];
+  cart: {
+  }
+  theme: {
+  }
+  users: [];
 }
-
 
 // item
 
 {
-    price:''
-    quantity:''
-    discription:''
-    
-
+  items: [ {id:'', unitPrice: "", quantity: "", discription: "" }];
 }
