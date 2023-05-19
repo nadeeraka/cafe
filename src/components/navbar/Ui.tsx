@@ -51,6 +51,16 @@ export default function ButtonAppBar() {
   // Todo The purpose of useCallback() and useMemo()
 
   // console.log(clorChangeAPI(true))
+  console.log(
+    store.dispatch({
+      type: "addItem",
+      payloard: {
+        discription: "Chicken Fried Rice",
+        quantity: 10,
+        unitPrice: 450,
+      },
+    })
+  );
   console.log(store.getState());
 
   // console.log(getDataFromApi())

@@ -1,13 +1,30 @@
-export const itemReduser = (state: any = [], action: any) => {
+import {itemReduserType} from '../../types/types'
+
+const state:itemReduserType = {
+    items:[
+        {
+            id:0,
+            unitPrice:0,
+            quantity:0,
+            discription:'',
+        }
+    ]
+    
+}
+
+
+export const itemReduser = (state:itemReduserType , action: any) => {
+    
   let lastCount: number = 0;
+  let lastQuantity: number = 0;
 
   switch (action.type) {
     case "addItem":
       return {
         ...state,
         discription: action.payloard.discription,
-        price: action.payloard.price,
-        quantity:action.payloard.quantity,
+        unitPrice: action.payloard.unitPrice,
+        quantity:  action.payloard.quantity,
         count: ++lastCount,
       };
     case "removeItem":
