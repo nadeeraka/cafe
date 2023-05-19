@@ -7,16 +7,21 @@ function App() {
   // const [count, setCount] = useState(0)
   const Wrapper = styled.div`
   
-      /* background-color: #171718;
-       height: 80%;
-   */
+      background-color: #171718;
+       /* height: 80%; */
+  
+
    
   `;
+  
   return (
     <>
     
     <NavUi/>
-    <Wrapper className='col1'/>
+    <body style={{ backgroundColor: '#232329'}}>
+    <Wrapper />
+    </body>
+    
       
     </>
   )
