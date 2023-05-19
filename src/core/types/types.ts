@@ -7,7 +7,7 @@ export type Headers = {
 };
 
 type Item = {
-  id:number;
+  id:string;
   unitPrice: number;
   quantity: number;
   discription: string;
