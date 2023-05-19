@@ -11,13 +11,17 @@ import styled from 'styled-components';
 import { getDataFromApi } from '../../core/api/query'
 import { clorChangeAPI } from '../../core/util/main'
 import Link from '@mui/material/Link';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Badge from '@mui/material/Badge';
+import Stack from '@mui/material/Stack';
 
 
 const Wrapper = styled(AppBar)`
 .tool{
     min-height: 60px;
     background-color: #171718;
-    /* border-bottom:  #f8c90ad8 20px; */
+    border-bottom: 5px solid  rgba(241,8,8,1);
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(241,8,8,1) 56%, rgba(0,212,255,1) 100%);; */
 }
 
 
@@ -26,18 +30,14 @@ const Wrapper = styled(AppBar)`
     height: 0px;
 }
 
-.menuItem1{
-/* min-width: 5px; */
-padding: 0;
-min-width:10%; 
-margin-right: 3%;
 
-/* background-color:aliceblue; */
-}
+
+
 .menuItem4{
 /* min-width: 5px; */
  
 margin-left: 3%;
+/* padding: 5px; */
 
 /* background-color:aliceblue; */
 }
@@ -46,6 +46,9 @@ margin-left: 3%;
 }
 .menuItem3{
     margin-left: auto;
+}
+.item6{
+    margin-left: 3%;
 }
  
 `;
@@ -79,7 +82,7 @@ export default function ButtonAppBar() {
                         </Link> */}
                         <Typography variant="h6" component="div" className='menuItem4'>
                         <Link href="#" underline="none" className='menuItem2'>
-                        Order
+                        Food categories
                         </Link>
                           
                         </Typography>
@@ -90,10 +93,16 @@ export default function ButtonAppBar() {
                           
                         </Typography>
                         <div className='menuItem5'>
-                        <Button  color="inherit">Cart</Button>
-                        <Button  color="inherit">Login</Button>
-                        </div>
+                        <Stack spacing={2} direction="row">
+                        <Badge badgeContent={4} color="secondary">
+                     
+                            <ShoppingCartIcon/>
+                      
+                        </Badge>
+                        </Stack>
                         
+                        </div>
+                        <Button  color="inherit" className='item6'>Login</Button>
                     </Toolbar>
                     <Toolbar>
 

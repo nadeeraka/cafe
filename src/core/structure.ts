@@ -1,0 +1,10 @@
+
+{
+    categories:[]
+    items:[]
+    cart:{}
+    users:[]
+
+
+
+}
