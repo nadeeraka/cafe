@@ -1,4 +1,4 @@
-import  React,{ useCallback } from 'react';
+import React, { useCallback } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -8,8 +8,9 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 // import { Menu as MenuIcon } from "@mui/icons-material/Menu";
 import styled from 'styled-components';
-import {getDataFromApi} from '../../core/api/query'
-import {clorChangeAPI} from '../../core/util/main'
+import { getDataFromApi } from '../../core/api/query'
+import { clorChangeAPI } from '../../core/util/main'
+import Link from '@mui/material/Link';
 
 
 const Wrapper = styled(AppBar)`
@@ -40,10 +41,8 @@ margin-left: 3%;
 
 /* background-color:aliceblue; */
 }
-.menuItem2{
-/* width: 80%; */
-/* margin-right: 2%; */
-/* background-color:red; */
+.menuItem5{
+    margin-left: 60%;
 }
 .menuItem3{
     margin-left: auto;
@@ -73,20 +72,33 @@ export default function ButtonAppBar() {
                             <MenuIcon />
                         </IconButton>
                         <Typography variant="h6" component="div" className='menuItem1'>
-                            NexMovie
+                            nick's Resturent
                         </Typography>
-                        <Typography variant="h6" component="div"  className='menuItem2'>
-                            Upcomming
+                        {/* <Link href="#" underline="none" className='menuItem2'>
+                            Menu
+                        </Link> */}
+                        <Typography variant="h6" component="div" className='menuItem4'>
+                        <Link href="#" underline="none" className='menuItem2'>
+                        Order
+                        </Link>
+                          
                         </Typography>
-                        <Typography variant="h6" component="div"  className='menuItem4'>
-                            Upcomming
+                        <Typography variant="h6" component="div" className='menuItem4'>
+                        <Link href="#" underline="none" className='menuItem2'>
+                        Today specials
+                        </Link>
+                          
                         </Typography>
-                        <Button  className='menuItem3' color="inherit">Login</Button>
+                        <div className='menuItem5'>
+                        <Button  color="inherit">Cart</Button>
+                        <Button  color="inherit">Login</Button>
+                        </div>
+                        
                     </Toolbar>
                     <Toolbar>
 
-                        
-                       
+
+
                     </Toolbar>
                 </AppBar>
             </Box>
