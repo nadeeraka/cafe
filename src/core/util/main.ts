@@ -12,3 +12,13 @@ export const clorChangeAPI=  (enable:boolean=false)=>{
     }
   return background
 }
+
+
+export const  getPrevQuntity =(items:any,id:string)=>{
+
+if (items.length>0) {
+    items.filter((e: { id: any })=>e.id === id)
+}
+return []
+
+}

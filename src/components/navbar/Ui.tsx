@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-// import { Menu as MenuIcon } from "@mui/icons-material/Menu";
 import styled from "styled-components";
 import { getDataFromApi } from "../../core/api/query";
 import { clorChangeAPI } from "../../core/util/main";
@@ -21,6 +20,7 @@ const Wrapper = styled(AppBar)`
     min-height: 60px;
     background-color: #171718;
     border-bottom: 5px solid rgba(241, 8, 8, 1);
+    margin-bottom: 1%;
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(241,8,8,1) 56%, rgba(0,212,255,1) 100%);; */
   }
 
@@ -96,7 +96,7 @@ export default function ButtonAppBar() {
             </Typography>
             <div className="menuItem5">
               <Stack spacing={2} direction="row">
-                <Badge badgeContent={4} color="secondary">
+                <Badge badgeContent={4} color="error">
                   <ShoppingCartIcon />
                 </Badge>
               </Stack>
