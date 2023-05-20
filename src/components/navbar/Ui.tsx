@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-// import { Menu as MenuIcon } from "@mui/icons-material/Menu";
 import styled from "styled-components";
 import { getDataFromApi } from "../../core/api/query";
 import { clorChangeAPI } from "../../core/util/main";
