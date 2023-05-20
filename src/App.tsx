@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import NavUi from "./components/navbar/Ui";
 import styled from "styled-components";
+import Main from './components/main/index'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,7 +15,8 @@ function App() {
     <>
       <NavUi />
 
-      <Wrapper style={{ backgroundColor: "#232329" }} />
+      {/* <Wrapper style={{ backgroundColor: "#232329" }} /> */}
+      <Main/>
     </>
   );
 }

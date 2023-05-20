@@ -1,7 +1,6 @@
 import { itemReduserType } from "../../types/types";
 import { v4 as uuidv4 } from "uuid";
 
-// v4()
 
 const initialState: itemReduserType = {
   items: [
@@ -18,13 +17,13 @@ export const itemReduser = (
   state: itemReduserType = initialState,
   action: any
 ) => {
-  let lastCount: number = 0;
 
   switch (action.type) {
     case "addItem":
       return {
         ...state,
         items: [
+            ...state.items,
           {
             id: uuidv4(),
             discription: action.payloard.discription,
@@ -39,7 +38,7 @@ export const itemReduser = (
         items: state.items.filter(
           (items: { id: any }) => items.id != action.payloard.id
         ),
-        id: ++lastCount,
+       
       };
 
     default:
