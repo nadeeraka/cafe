@@ -15,6 +15,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import img1 from '../../assets/img/paella.jpg'
+import {Wrapper} from './cardStyled'
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -39,8 +40,10 @@ export default function RecipeReviewCard() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
+    <Wrapper>
+    <Card sx={{ maxWidth: 345 }} className='main'>
+       
+      {/* <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
             R
@@ -53,7 +56,7 @@ export default function RecipeReviewCard() {
         }
         title="Shrimp and Chorizo Paella"
         subheader="September 14, 2016"
-      />
+      /> */}
       <CardMedia
         component="img"
         height="194"
@@ -113,5 +116,6 @@ export default function RecipeReviewCard() {
         </CardContent>
       </Collapse>
     </Card>
+    </Wrapper>
   );
 }
