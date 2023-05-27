@@ -18,6 +18,12 @@ export default function BasicGrid() {
   return (
     <Wrapper>
       <Box className="box" sx={{ flexGrow: 1 }}>
+      <CardComponent />
+
+      </Box>
+      
+      {/* <Box className="box" sx={{ flexGrow: 1 }}>
+      
         <Grid className="grid1" container spacing={3}>
           <Grid item xs={3}>
             <CardComponent />
@@ -32,29 +38,13 @@ export default function BasicGrid() {
             <CardComponent />
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
 
 {/*   
 
 second grid 
 
 */}
-      <Box className="box" sx={{ flexGrow: 1 }}>
-        <Grid className="grid1" container spacing={3}>
-          <Grid item xs={3}>
-            <CardComponent />
-          </Grid>
-          <Grid item xs={3}>
-            <CardComponent />
-          </Grid>
-          <Grid item xs={3}>
-            <CardComponent />
-          </Grid>
-          <Grid item xs={3}>
-            <CardComponent />
-          </Grid>
-        </Grid>
-      </Box>
-    </Wrapper>
+         </Wrapper>
   );
 }

@@ -1,0 +1,8 @@
+.container {
+    margin-top: 2%;
+    background-color: #00A4BD;
+    width: 20%;
+    height: 20%;
+    min-height: 80%;
+/* border: 10px solid red; */
+}
